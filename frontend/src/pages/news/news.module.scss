@@ -1,0 +1,16 @@
+.news {
+  display: flex;
+  margin-left: 5px;
+  width: 930px;
+  gap: 20px;
+  .wide_column {
+    width: 560px;
+  }
+  .narrow_column {
+    width: 345px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}

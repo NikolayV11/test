@@ -1,0 +1,106 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222222;
+}
+.page_header {
+  height: 50px;
+  background-color: #222222;
+  .content {
+    .header__navig {
+      margin-top: 0px;
+      display: flex;
+
+      .HeaderItems {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+      }
+      .HeaderLogo {
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          cursor: pointer;
+          margin-right: 30px;
+          img {
+            opacity: 1;
+          }
+        }
+      }
+      .HeaderSearch {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+
+        img {
+          position: absolute;
+          left: 5px;
+          outline: 0;
+          cursor: text;
+        }
+        input {
+          background-color: #424242;
+          height: 35px;
+          padding: 0 30px;
+          border-radius: 8px;
+          outline: 0;
+          color: aliceblue;
+          font-size: 16px;
+
+          &:hover {
+            background-color: #515151;
+          }
+        }
+      }
+      .HeaderNotifications {
+        button {
+          cursor: pointer;
+          width: 48px;
+          &:hover {
+            background-color: #515151;
+          }
+        }
+      }
+      .HeaderAudio {
+        min-width: 200px;
+        flex-grow: 1;
+        justify-content: start;
+        button {
+          width: 48px;
+          cursor: pointer;
+          &:hover {
+            background-color: #515151;
+          }
+        }
+      }
+      .HeaderProf {
+        .btn {
+          &:hover {
+            background-color: #515151;
+          }
+        }
+        .HeaderMunu {
+          width: 48px;
+        }
+        button {
+          display: flex;
+          cursor: pointer;
+          // width: 50px;
+          gap: 4px;
+          .imgUser {
+            margin-left: 8px;
+            width: 35px;
+            border-radius: 50%;
+          }
+          .profileArrow {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}

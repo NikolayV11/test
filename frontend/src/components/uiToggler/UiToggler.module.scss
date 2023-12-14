@@ -1,0 +1,44 @@
+.ui_togger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 25px;
+  gap: 5px;
+  background-color: #222222;
+  border-radius: 8px;
+
+  cursor: pointer;
+  span {
+    color: rgb(54, 55, 56);
+    font-size: 16px;
+    flex-grow: 1;
+    cursor: pointer;
+  }
+  .wrap {
+    position: relative;
+    width: 30px;
+    height: 9px;
+    background-color: #363738;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 3px;
+    .circle {
+      position: absolute;
+      top: -3px;
+      cursor: pointer;
+      background-color: #71aaeb;
+      width: 15px;
+      height: 15px;
+      box-shadow: 0px 0px 2px 2px rgba(54, 55, 56, 0.56);
+      border-radius: 100%;
+    }
+
+    .circle_on {
+      right: 0;
+    }
+    .circle_of {
+      left: 0;
+    }
+  }
+}

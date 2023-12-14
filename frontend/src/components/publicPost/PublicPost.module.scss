@@ -1,0 +1,122 @@
+.box_post {
+  label {
+    margin: 0;
+    padding: 0px 15px;
+    max-width: 530px;
+    // background-color: #fff;
+    height: 51px;
+    display: flex;
+
+    cursor: text;
+  }
+  .post {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: text;
+
+    .inputPost {
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      gap: 15px;
+      width: 100%;
+      img {
+        border-radius: 100%;
+        width: 35px;
+        height: 35px;
+      }
+      input {
+        background-color: rgba(0, 0, 0, 0);
+        height: 35px;
+        border-radius: 8px;
+        outline: 0;
+        color: aliceblue;
+        font-size: 14px;
+      }
+    }
+    .svgBtn {
+      position: relative;
+      background-color: rgba(0, 0, 0, 0);
+      cursor: pointer;
+      .svg {
+        width: 20px;
+        height: 20px;
+        color: #939393;
+        &:hover {
+          color: #a7a7a7;
+        }
+      }
+      .clue {
+        position: absolute;
+      }
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul {
+        display: flex;
+        gap: 5px;
+        li {
+          display: flex;
+          gap: 5px;
+        }
+      }
+    }
+  }
+  .post_actions_btns {
+    position: relative;
+    .sepActive {
+      max-width: 532px;
+      margin: 0 auto;
+      border-top: none;
+    }
+    .sepActive_close {
+      position: absolute;
+      right: 15px;
+      background-color: rgba(0, 0, 0, 0);
+      top: 10px;
+      cursor: pointer;
+      span {
+        svg {
+          width: 18px;
+          stroke: #939393;
+          &:hover {
+            stroke: #a7a7a7;
+          }
+        }
+      }
+    }
+    .postVisibility {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 255px;
+      height: 40px;
+
+      .publicationFor {
+      }
+      .calen {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        button {
+          background-color: rgba(0, 0, 0, 0);
+          padding: 3px 5px;
+          color: #939393;
+          cursor: pointer;
+        }
+        .calen_calendar {
+          position: absolute;
+          top: 23px;
+          left: -4px;
+        }
+      }
+    }
+  }
+}

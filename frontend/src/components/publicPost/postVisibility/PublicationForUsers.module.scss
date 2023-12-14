@@ -1,0 +1,58 @@
+.blocPublic {
+  background: #222222;
+  position: relative;
+  .blocBtn {
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 3px 3px;
+    color: #939393;
+
+    &:hover {
+      background-color: #515151;
+      border-radius: 8px;
+    }
+
+    .blocBtn_title {
+    }
+    .blocBtn_img {
+    }
+  }
+  .list {
+    top: 30px;
+    position: absolute;
+    width: 200px;
+    background: #222222;
+    border-radius: 8px;
+    padding: 7px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    li {
+      button {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background: rgba(0, 0, 0, 0);
+        padding: 3px 5px;
+        color: #e1e3e6;
+
+        .list_title {
+        }
+        .list_ico {
+        }
+      }
+      &:hover {
+        background-color: #515151;
+      }
+    }
+  }
+  .active_on {
+    display: flex;
+  }
+  .active_off {
+    display: none;
+  }
+}
