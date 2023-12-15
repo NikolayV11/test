@@ -1,16 +1,17 @@
 import React from "react";
 import styles from "./PublicationForUsers.module.scss";
-export function PublicationForUsers() {
+export function PublicationForUsers({ openList, setOpenList, setOpenCal }) {
   const listPublic = ["Видно всем", "Видно друзьям", "Выбать Близких друзей"];
   const [itemListPublic, setItemListPublic] = React.useState("Видно всем");
-  const [open, setOpen] = React.useState(false);
+
   return (
     <div className={styles.blocPublic}>
       <div>
         <button
           className={styles.blocBtn}
           onClick={() => {
-            setOpen(!open);
+            setOpenList(!openList);
+            setOpenCal(false);
           }}>
           <span className={styles.blocBtn_title}>{itemListPublic}</span>
           <span className={styles.blocBtn_img}>
@@ -30,14 +31,14 @@ export function PublicationForUsers() {
         </button>
       </div>
 
-      <ul className={`${styles.list} boxBorder ${open ? styles.active_on : styles.active_off}`}>
+      <ul className={`${styles.list} boxBorder ${openList ? styles.active_on : styles.active_off}`}>
         {listPublic.map((item, index) => {
           return (
             <li>
               <button
                 onClick={() => {
                   setItemListPublic(item);
-                  setOpen(!open);
+                  setOpenList(!openList);
                 }}>
                 <span
                   className={styles.list_title}

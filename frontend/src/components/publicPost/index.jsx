@@ -7,6 +7,7 @@ import { PublicationForUsers } from "./postVisibility/index";
 export function PublicPost({ activeInput, setActiveInput }) {
   const [value, onChange] = React.useState(new Date());
   const [openCal, setOpenCal] = React.useState(false);
+  const [openList, setOpenList] = React.useState(false);
 
   const boxPost = [
     {
@@ -115,25 +116,31 @@ export function PublicPost({ activeInput, setActiveInput }) {
             </button>
             <div className={styles.postVisibility}>
               <div className={styles.publicationFor}>
-                <PublicationForUsers />
+                <PublicationForUsers
+                  openList={openList}
+                  setOpenList={setOpenList}
+                  setOpenCal={setOpenCal}
+                />
               </div>
               <div className={styles.calen}>
                 <button
+                  className={styles.calen_btn}
                   onClick={() => {
                     setOpenCal(!openCal);
+                    setOpenList(false);
                   }}>
                   <span>{value.toLocaleDateString()}</span>
                 </button>
                 {openCal && (
                   <div className={styles.calen_calendar}>
-                    <MyApp value={value} onChange={onChange} className={`boxBorder`} />
+                    <MyApp value={value} onChange={onChange} className={` boxBorder`} />
                   </div>
-                )}
-              </div>
+                )}{" "}
+              </div>{" "}
             </div>
             <div className="sep" style={{ borderTop: "none" }}></div>
           </div>
-        )}
+        )}{" "}
       </div>
     </>
   );

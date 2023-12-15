@@ -1,14 +1,24 @@
 .news {
+  position: relative;
   display: flex;
   margin-left: 5px;
-  width: 930px;
+  max-width: 930px;
+  width: 100%;
   gap: 20px;
   .wide_column {
     width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
   .narrow_column {
+    position: sticky;
+    // width: 50px;
+    height: 50px;
+    right: 2em;
+    top: 4.25em;
+    right: 14px;
     width: 345px;
-    position: relative;
     display: flex;
     flex-direction: column;
     gap: 15px;

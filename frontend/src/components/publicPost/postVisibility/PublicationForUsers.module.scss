@@ -1,6 +1,7 @@
 .blocPublic {
   background: #222222;
   position: relative;
+  z-index: 2;
   .blocBtn {
     background: rgba(0, 0, 0, 0);
     display: flex;
