@@ -41,3 +41,11 @@ a {
 .sep {
   border: 1px solid #363738;
 }
+
+.img_SVG_color {
+  color: #939393;
+}
+.post_header_btn {
+  width: 24px;
+  height: 24px;
+}

@@ -75,7 +75,7 @@ app.get("/post", (req, res, next) => {
           url: "url",
           quantity: 0,
         },
-        views: 45,
+        views: 4,
       },
     },
     {
@@ -109,7 +109,7 @@ app.get("/post", (req, res, next) => {
           url: "url",
           quantity: 0,
         },
-        views: 45,
+        views: 4564,
       },
     },
   ]);

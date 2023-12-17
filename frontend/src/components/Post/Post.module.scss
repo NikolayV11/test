@@ -66,6 +66,22 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      max-width: 63px;
+      gap: 5px;
+
+      button {
+        width: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: inherit;
+        color: #71aaeb;
+
+        .SVG {
+          height: 24px;
+          width: 24px;
+        }
+      }
     }
   }
   &__content {
