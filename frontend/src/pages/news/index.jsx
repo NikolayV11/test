@@ -16,7 +16,7 @@ export function News({ dataPost }) {
       <div className={styles.wide_column}>
         <PublicPost activeInput={activeInput} setActiveInput={setActiveInput} />
         {dataPost.map((item, index) => {
-          return <Post data={item} activeInput={activeInput} />;
+          return <Post key={index} data={item} activeInput={activeInput} />;
         })}
       </div>{" "}
       <div className={styles.narrow_column} style={{ marginTop: `${scrollI}` }}>

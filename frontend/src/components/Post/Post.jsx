@@ -4,9 +4,9 @@ import { HandySvg } from "handy-svg";
 import styles from "./Post.module.scss";
 
 import { Actions } from "./btn/Actions/Actions";
+import { LikeBlock } from "./btn/LikeBlock/LikeBlock";
 
 export function Post({ data }) {
-  console.log(data);
   return (
     <div className={`${styles.post} boxBorder`}>
       <div className={styles.post__header}>
@@ -52,10 +52,7 @@ export function Post({ data }) {
           })}
         </div>
       </div>
-      <div className={styles.post__likeBlock}>
-        <div className={styles.post__likeBlock_likebtn}></div>
-        <div className={styles.post__likeBlock_likeViews}> </div>
-      </div>
+      <LikeBlock data={data.likeContent} />
     </div>
   );
 }

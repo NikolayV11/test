@@ -49,3 +49,6 @@ a {
   width: 24px;
   height: 24px;
 }
+.active_SVG {
+  color: red;
+}

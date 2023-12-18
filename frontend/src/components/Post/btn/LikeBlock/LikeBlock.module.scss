@@ -1,0 +1,43 @@
+.likeBlock {
+  display: flex;
+  justify-content: space-between;
+  &_likebtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    .likebtn_blok {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        background-color: #4c4a4a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        padding: 2px 10px;
+        border-radius: 14px;
+        color: #939393;
+        cursor: pointer;
+      }
+    }
+  }
+  &_likeViews {
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3px;
+      padding: 2px 10px;
+      border-radius: 14px;
+      color: #939393;
+
+      svg {
+        width: 16px;
+      }
+    }
+  }
+}

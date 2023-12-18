@@ -13,7 +13,6 @@ export function Main() {
       })
       .then((data) => {
         setDatapost(data);
-        console.log(data, "server");
       });
   }, []);
   return (

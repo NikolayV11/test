@@ -32,14 +32,12 @@ app.get("/post", (req, res, next) => {
           quantity: 4,
         },
         comments: {
-          status: true,
-          url: "url",
-          quantity: 4,
+          status: false,
         },
         repost: {
-          status: false,
+          status: true,
           url: "url",
-          quantity: 0,
+          quantity: 234,
         },
         views: 45,
       },
