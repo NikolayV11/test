@@ -1,0 +1,19 @@
+.post_editing {
+  display: flex;
+  padding: 20px 15px;
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .poster {
+      display: flex;
+      cursor: pointer;
+    }
+
+    .sep {
+      border-left: none;
+      height: 12px;
+    }
+  }
+}

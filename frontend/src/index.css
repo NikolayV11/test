@@ -52,3 +52,18 @@ a {
 .active_SVG {
   color: red;
 }
+
+.PublicPost_Btn {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  display: flex;
+}
+.PublicPost_SVG {
+  width: 20px;
+  height: 20px;
+  color: #939393;
+  &:hover {
+    color: #a7a7a7;
+  }
+}
